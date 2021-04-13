@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename ='main.css')}}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Wordvec</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Wordvec</h1>
+        <h3>Please type your words below.</h3>
+        <form action="{{url_for('word')}}" method="POST" enctype="multipart/form-data">
+            <label for="Word1">Word 1:</label>
+            <input style="width: 15em" type="text" title="Word" name="Word1" placeholder="eg. Madrid" required><br>
+             <label for="Word2">Word 2:</label>
+            <input style="width: 15em" type="text" title="Word" name="Word2" placeholder="eg. Spain" required><br>
+             <label for="Word3">Word 3:</label>
+            <input style="width: 15em" type="text" title="Word" name="Word3" placeholder="eg. France" required><br>
+            <br>
+            <button type="submit"> Submit </button>
+        </form>
+        <h4>Note:The programme does world1 - word2 +word3</h4>
+    </div>
+</body>
+</html>
